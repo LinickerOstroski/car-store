@@ -1,0 +1,102 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    margin-inline: auto;
+    max-width: 1280px;
+}
+
+#icone .navegacao .icon-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+.navegacao{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 48px;
+    max-width: 1280px;
+}
+
+.navegacao nav{
+    display: flex;
+    gap: 18px;
+}
+
+.navegacao nav a{
+    text-decoration: none;
+    color: white;
+    padding-block: 12px;
+    padding-inline: 32px;
+    border-radius: 4px;
+    background-color: rgb(126, 167, 23);
+}
+
+.navegacao nav a:hover{
+    background-color: rgb(93, 123, 16);
+}
+
+#icone div img{
+    width: 100px;
+    height: 100px;
+    border: 4px solid rgb(114, 154, 14);
+    border-radius: 50%;
+}
+
+/*Seção de baixo*/
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+#conteudo{
+    display: flex;
+    gap: 20px;
+}
+
+.cor-laranja{
+    color: rgb(255, 157, 0);
+}
+
+.card{
+    display: flex;
+    padding: 28px;
+    gap: 12px;
+    border-radius: 2px;
+    color: white;
+    background-color: rgb(15, 15, 15);
+}
+
+p:not(cor-laranja){
+    color: rgb(175, 175, 175);
+}
+
+.card div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#conteudo .card img{
+    width: 365px;
+    border-radius: 4px;
+    justify-self: start;
+}
+
+.button{
+    padding-block: 10px;
+    background-color:rgb(255, 157, 0);
+    border: none;
+    border-radius: 4px;
+}
