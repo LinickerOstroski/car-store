@@ -1,4 +1,4 @@
-# Car Store
+# Loja de Carros
 
 Uma atividade prática de HTML e CSS com o objetivo de criar duas páginas distintas, explorando diferentes estruturas e organizações para uma loja de carros.
 
