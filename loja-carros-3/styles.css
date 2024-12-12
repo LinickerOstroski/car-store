@@ -102,6 +102,9 @@ p:not(cor-laranja){
 
 @media screen and (max-width: 640px){
     
+    #icone .navegacao .icon-box{
+        flex-direction: column;
+    }
 
     .navegacao{
         flex-direction: column; 
@@ -122,7 +125,8 @@ p:not(cor-laranja){
     }
 
     #conteudo .card img{
-        width: 125px;
+        width: 148px;
+        height: 84px;
         border-radius: 4px;
         justify-self: start;
     }
