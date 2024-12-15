@@ -208,6 +208,7 @@ p:not(cor-laranja) {
     .card {
         align-items: center;
         width: 256px;
+        height: 328px;
         padding: 12px;
         gap: 6px;
         border-radius: 2px;
@@ -216,14 +217,14 @@ p:not(cor-laranja) {
     }
 
     #conteudo .card img {
-        margin-top: 8px;
+        margin-top: 6px;
         width: 218px;
         height: 124px;
         border-radius: 4px;
     }
 
     #conteudo .card div {
-        margin-top: 12px;
+        margin-top: 6px;
         display: flex;
         flex-direction: column;
         align-self: flex-start;
