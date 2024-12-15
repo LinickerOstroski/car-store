@@ -1,23 +1,24 @@
-*{
+* {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-.container{
+.container {
     margin-inline: auto;
     max-width: 1280px;
 }
 
-#icone .navegacao .icon-box{
+#icone .navegacao .icon-box {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 12px;
 }
-.navegacao{
+
+.navegacao {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,12 +26,12 @@
     max-width: 1280px;
 }
 
-.navegacao nav{
+.navegacao nav {
     display: flex;
     gap: 18px;
 }
 
-.navegacao nav a{
+.navegacao nav a {
     text-decoration: none;
     color: white;
     padding-block: 12px;
@@ -39,11 +40,11 @@
     background-color: rgb(126, 167, 23);
 }
 
-.navegacao nav a:hover{
+.navegacao nav a:hover {
     background-color: rgb(93, 123, 16);
 }
 
-#icone div img{
+#icone div img {
     width: 100px;
     height: 100px;
     border: 4px solid rgb(114, 154, 14);
@@ -52,23 +53,23 @@
 
 /*Seção de baixo*/
 
-.cards{
+.cards {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 
-#conteudo{
+#conteudo {
     display: flex;
     gap: 20px;
 }
 
-.cor-laranja{
+.cor-laranja {
     color: rgb(255, 157, 0);
 }
 
-.card{
+.card {
     display: flex;
     padding: 28px;
     gap: 12px;
@@ -77,58 +78,163 @@
     background-color: rgb(15, 15, 15);
 }
 
-p:not(cor-laranja){
+p:not(cor-laranja) {
     color: rgb(175, 175, 175);
 }
 
-.card div{
+.card div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-#conteudo .card img{
+#conteudo .card img {
     width: 365px;
     border-radius: 4px;
     justify-self: start;
 }
 
-.button{
+.button {
     padding-block: 10px;
-    background-color:rgb(255, 157, 0);
+    background-color: rgb(255, 157, 0);
     border: none;
     border-radius: 4px;
 }
 
-@media screen and (max-width: 640px){
-    
-    #icone .navegacao .icon-box{
-        flex-direction: column;
+
+/*tablets*/
+
+@media screen and (max-width: 768px) {
+
+    #icone .navegacao .icon-box {
+        flex-direction: row;
     }
 
-    .navegacao{
-        flex-direction: column; 
-        & nav{
+    .navegacao {
+        margin-inline: 24px;
+        flex-direction: row;
+
+        & nav {
+            margin-inline: 8px;
             margin-top: 20px;
+            width: 250px;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
+            gap: 8px;
+
+            & a {
+                text-align: center;
+                padding-block: 12px;
+                width: 120px;
+                padding-inline: 4px;
+            }
         }
     }
 
-    .card{
-        padding: 8px;
+    .card {
+        width: 242px;
+        height: 312px;
+        flex-direction: column;
+        padding: 12px;
+        gap: 6px;
+        border-radius: 2px;
+        color: white;
+        background-color: rgb(15, 15, 15);
+
+        & div {
+            margin-top: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            & .button {
+                align-self: flex-start;
+                padding-inline: 8px;
+            }
+        }
+    }
+
+    #conteudo .card img {
+        width: 184px;
+        height: 98px;
+        border-radius: 4px;
+        justify-self: start;
+    }
+
+}
+
+
+@media screen and (max-width: 607px) {
+    .navegacao {
+        margin-inline: 24px;
+        flex-direction: column;
+    }
+}
+
+
+/*smartphone*/
+
+@media screen and (max-width: 480px) {
+
+    #icone .navegacao .icon-box {
+        flex-direction: column;
+    }
+
+    .navegacao {
+        flex-direction: column;
+
+        & nav {
+            margin-top: 20px;
+            width: 250px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 8px;
+
+            & a {
+                text-align: center;
+                padding-block: 12px;
+                width: 120px;
+                padding-inline: 4px;
+            }
+        }
+    }
+
+    .cards {
+        width: 70vw;
+    }
+
+    .card {
+        align-items: center;
+        width: 256px;
+        padding: 12px;
         gap: 6px;
         border-radius: 2px;
         color: white;
         background-color: rgb(15, 15, 15);
     }
 
-    #conteudo .card img{
-        width: 148px;
-        height: 84px;
+    #conteudo .card img {
+        margin-top: 8px;
+        width: 218px;
+        height: 124px;
         border-radius: 4px;
-        justify-self: start;
     }
+
+    #conteudo .card div {
+        margin-top: 12px;
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        margin-left: 6px;
+        gap: 12px;
+
+        & .button {
+            align-self: flex-start;
+            padding-inline: 8px;
+        }
+    }
+
 
 }
